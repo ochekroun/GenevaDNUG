@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owin.Tutorials.FileServer", "Owin.Tutorials.FileServer\Owin.Tutorials.FileServer.csproj", "{200080F1-8187-46C8-BF12-F0E312C630A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owin.Tutorials.WebApi.SelfHost", "Owin.Tutorials.WebApi.SelfHost\Owin.Tutorials.WebApi.SelfHost.csproj", "{3E74B2A0-E940-498C-A6F5-21E624A43958}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owin.Tutorials.WebApi.Logic", "Owin.Tutorials.WebApi.Logic\Owin.Tutorials.WebApi.Logic.csproj", "{5AE74DA8-B875-4EE7-86D2-E5E5FBBA0CA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owin.Tutorials.WebApi.Tests", "Owin.Tutorials.WebApi.Tests\Owin.Tutorials.WebApi.Tests.csproj", "{DCBC3D7D-1715-4B86-ABCC-08EEF3C11612}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owin.Tutorials.HelloOwin", "Owin.Tutorials.HelloOwin\Owin.Tutorials.HelloOwin.csproj", "{E27A0C6D-9BC9-4ED9-886F-E85955A7CA0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owin.Tutorials.WebApi.SystemWeb", "Owin.Tutorials.WebApi.SystemWeb\Owin.Tutorials.WebApi.SystemWeb.csproj", "{CBA5C4E7-ECE3-46FA-A8E6-7DC6B174C8A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{200080F1-8187-46C8-BF12-F0E312C630A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{200080F1-8187-46C8-BF12-F0E312C630A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{200080F1-8187-46C8-BF12-F0E312C630A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{200080F1-8187-46C8-BF12-F0E312C630A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E74B2A0-E940-498C-A6F5-21E624A43958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E74B2A0-E940-498C-A6F5-21E624A43958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E74B2A0-E940-498C-A6F5-21E624A43958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E74B2A0-E940-498C-A6F5-21E624A43958}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AE74DA8-B875-4EE7-86D2-E5E5FBBA0CA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AE74DA8-B875-4EE7-86D2-E5E5FBBA0CA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AE74DA8-B875-4EE7-86D2-E5E5FBBA0CA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AE74DA8-B875-4EE7-86D2-E5E5FBBA0CA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCBC3D7D-1715-4B86-ABCC-08EEF3C11612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCBC3D7D-1715-4B86-ABCC-08EEF3C11612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCBC3D7D-1715-4B86-ABCC-08EEF3C11612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCBC3D7D-1715-4B86-ABCC-08EEF3C11612}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E27A0C6D-9BC9-4ED9-886F-E85955A7CA0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E27A0C6D-9BC9-4ED9-886F-E85955A7CA0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E27A0C6D-9BC9-4ED9-886F-E85955A7CA0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E27A0C6D-9BC9-4ED9-886F-E85955A7CA0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBA5C4E7-ECE3-46FA-A8E6-7DC6B174C8A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBA5C4E7-ECE3-46FA-A8E6-7DC6B174C8A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBA5C4E7-ECE3-46FA-A8E6-7DC6B174C8A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBA5C4E7-ECE3-46FA-A8E6-7DC6B174C8A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
