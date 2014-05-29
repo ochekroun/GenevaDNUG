@@ -20,7 +20,7 @@ namespace Owin.Tutorials.WebApi.Tests
             {
                 using (var client = new HttpClient(server.Handler))
                 {
-                    var response = await client.GetAsync("http://testserver/api/values");
+                    var response = await client.GetAsync("http://testserver/api/values"); 
                     var result = await response.Content.ReadAsStringAsync();
                     Assert.IsTrue(result.Any());
                 }
