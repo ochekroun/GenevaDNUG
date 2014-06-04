@@ -13,6 +13,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owin.Tutorials.HelloOwin", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owin.Tutorials.WebApi.SystemWeb", "Owin.Tutorials.WebApi.SystemWeb\Owin.Tutorials.WebApi.SystemWeb.csproj", "{CBA5C4E7-ECE3-46FA-A8E6-7DC6B174C8A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owin.Tutorials.SignalR.SelfHost", "Owin.Tutorials.SignalR.SelfHost\Owin.Tutorials.SignalR.SelfHost.csproj", "{227593A1-67BA-4901-9DB5-0807C34EE2A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owin.Tutorials.SignalR.Client.Console", "Owin.Tutorials.SignalR.Client.Console\Owin.Tutorials.SignalR.Client.Console.csproj", "{FB7A3A4A-A103-4813-80D8-900FF367BE67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owin.Tutorials.SignalR.Client.Wpf", "Owin.Tutorials.SignalR.Client.Wpf\Owin.Tutorials.SignalR.Client.Wpf.csproj", "{759F9ECA-21DA-44F5-B2D0-0D33C1743EE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +49,18 @@ Global
 		{CBA5C4E7-ECE3-46FA-A8E6-7DC6B174C8A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBA5C4E7-ECE3-46FA-A8E6-7DC6B174C8A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBA5C4E7-ECE3-46FA-A8E6-7DC6B174C8A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{227593A1-67BA-4901-9DB5-0807C34EE2A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{227593A1-67BA-4901-9DB5-0807C34EE2A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{227593A1-67BA-4901-9DB5-0807C34EE2A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{227593A1-67BA-4901-9DB5-0807C34EE2A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB7A3A4A-A103-4813-80D8-900FF367BE67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB7A3A4A-A103-4813-80D8-900FF367BE67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB7A3A4A-A103-4813-80D8-900FF367BE67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB7A3A4A-A103-4813-80D8-900FF367BE67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{759F9ECA-21DA-44F5-B2D0-0D33C1743EE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{759F9ECA-21DA-44F5-B2D0-0D33C1743EE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{759F9ECA-21DA-44F5-B2D0-0D33C1743EE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{759F9ECA-21DA-44F5-B2D0-0D33C1743EE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
