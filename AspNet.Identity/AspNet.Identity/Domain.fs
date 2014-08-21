@@ -4,11 +4,9 @@ open  Microsoft.AspNet.Identity
 
 type User() = 
 
-    let mutable email = ""
-
     member val Id = "" with get, set
     member val UserName = "" with get, set
-    //member val Email = "" with get, set
+    member val Email = "" with get, set
     member val PasswordHash = "" with get, set
     member val SecurityStamp = "" with get, set
     member val EmailConfirmed = false with get, set
@@ -17,10 +15,6 @@ type User() =
     member val LockoutEnabled = false with get, set
     member val AccessFailedCount = 0 with get, set
     member val PhoneNumber = "" with get, set
-
-    member self.Email
-        with get() = email
-        and set(value) = email <- value
     
     interface IUser with
         member self.Id 
