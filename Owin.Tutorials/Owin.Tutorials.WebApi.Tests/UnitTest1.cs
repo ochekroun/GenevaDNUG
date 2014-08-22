@@ -15,12 +15,21 @@ namespace Owin.Tutorials.WebApi.Tests
         [TestMethod]
         public async Task TestMethod1()
         {
-            Type valuesControllerType = typeof(ValuesController); 
+            System.Reflection.Assembly.Load("Owin.Tutorials.WebApi.Logic");
+            
             using (var server = TestServer.Create<Startup>())
             {
+                {
+                    var response = await server.HttpClient.GetAsync("api/values");
+                    response.EnsureSuccessStatusCode();
+                    var result = await response.Content.ReadAsStringAsync();
+                    Assert.IsTrue(result.Any());
+                }
+
                 using (var client = new HttpClient(server.Handler))
                 {
-                    var response = await client.GetAsync("http://testserver/api/values"); 
+                    var response = await client.GetAsync("http://testserver/api/values");
+                    response.EnsureSuccessStatusCode();
                     var result = await response.Content.ReadAsStringAsync();
                     Assert.IsTrue(result.Any());
                 }

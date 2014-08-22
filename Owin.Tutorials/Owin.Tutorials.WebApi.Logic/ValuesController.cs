@@ -3,9 +3,11 @@ using System.Web.Http;
 
 namespace Owin.Tutorials.WebApi.Logic
 {
+    [Authorize]
     public class ValuesController : ApiController
     {
         // GET api/values 
+        [Authorize(Roles="admin")]
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
