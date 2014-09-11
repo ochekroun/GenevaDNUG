@@ -77,9 +77,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Owin.Tutorials.WebApi.Logic\Owin.Tutorials.WebApi.Logic.csproj">
+    <ProjectReference Include="..\Owin.Tutorials.WebApi.Logic\Owin.Tutorials.WebApi.Controllers.csproj">
       <Project>{5ae74da8-b875-4ee7-86d2-e5e5fbba0ca2}</Project>
-      <Name>Owin.Tutorials.WebApi.Logic</Name>
+      <Name>Owin.Tutorials.WebApi.Controllers</Name>
       <Private>True</Private>
     </ProjectReference>
   </ItemGroup>

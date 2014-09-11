@@ -81,7 +81,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Startup.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="ValuesControllerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -89,9 +89,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Owin.Tutorials.WebApi.Logic\Owin.Tutorials.WebApi.Logic.csproj">
+    <ProjectReference Include="..\Owin.Tutorials.WebApi.Logic\Owin.Tutorials.WebApi.Controllers.csproj">
       <Project>{5AE74DA8-B875-4EE7-86D2-E5E5FBBA0CA2}</Project>
-      <Name>Owin.Tutorials.WebApi.Logic</Name>
+      <Name>Owin.Tutorials.WebApi.Controllers</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

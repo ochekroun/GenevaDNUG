@@ -5,18 +5,22 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.Owin.Testing;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Owin.Tutorials.WebApi.Logic;
+using Owin.Tutorials.WebApi.Controllers;
 
 namespace Owin.Tutorials.WebApi.Tests
 {
     [TestClass]
-    public class UnitTest1
+    public class ValuesControllerTests
     {
-        [TestMethod]
-        public async Task TestMethod1()
+        [TestInitialize]
+        public void HttpClientSetup()
         {
-            System.Reflection.Assembly.Load("Owin.Tutorials.WebApi.Logic");
-            
+            System.Reflection.Assembly.Load("Owin.Tutorials.WebApi.Controllers");
+        }
+
+        [TestMethod]
+        public async Task GetWithServerClientTest()
+        {            
             using (var server = TestServer.Create<Startup>())
             {
                 {
@@ -25,7 +29,15 @@ namespace Owin.Tutorials.WebApi.Tests
                     var result = await response.Content.ReadAsStringAsync();
                     Assert.IsTrue(result.Any());
                 }
+            }
 
+        }
+
+        [TestMethod]
+        public async Task GetWithServerHandlerTest()
+        {
+            using (var server = TestServer.Create<Startup>())
+            {
                 using (var client = new HttpClient(server.Handler))
                 {
                     var response = await client.GetAsync("http://testserver/api/values");
