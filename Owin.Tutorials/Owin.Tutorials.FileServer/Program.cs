@@ -19,7 +19,16 @@ namespace Owin.Tutorials.FileServer
                 FileSystem = fileSystem
             };
 
-            WebApp.Start(url, builder => builder.UseFileServer(options));
+            WebApp.Start(url, builder =>
+                {
+                    //builder.UseWelcomePage();
+                    builder.UseHandlerAsync((req, res) =>
+                    {
+                        res.ContentType = "text/plain";
+                        return res.WriteAsync("Hello World!");
+                    });
+                    //builder.UseFileServer(options);
+                });
             Console.WriteLine("Listening at " + url);
             Console.ReadLine();
         }
