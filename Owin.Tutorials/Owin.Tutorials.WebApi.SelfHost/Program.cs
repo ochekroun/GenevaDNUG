@@ -5,7 +5,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Owin.Hosting;
-using Owin.Tutorials.WebApi.Logic;
+using Owin.Tutorials.WebApi.Controllers;
 
 namespace Owin.Tutorials.WebApi.SelfHost
 {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Web.Http;
 using System.Web.Http.Dispatcher;
-using Owin.Tutorials.WebApi.Logic;
+using Owin.Tutorials.WebApi.Controllers;
 
 namespace Owin.Tutorials.WebApi.SelfHost
 {

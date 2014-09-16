@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owin.Tutorials.FileServer", "Owin.Tutorials.FileServer\Owin.Tutorials.FileServer.csproj", "{200080F1-8187-46C8-BF12-F0E312C630A3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owin.Tutorials.WebApi.SelfHost", "Owin.Tutorials.WebApi.SelfHost\Owin.Tutorials.WebApi.SelfHost.csproj", "{3E74B2A0-E940-498C-A6F5-21E624A43958}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owin.Tutorials.WebApi.Logic", "Owin.Tutorials.WebApi.Logic\Owin.Tutorials.WebApi.Logic.csproj", "{5AE74DA8-B875-4EE7-86D2-E5E5FBBA0CA2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owin.Tutorials.WebApi.Controllers", "Owin.Tutorials.WebApi.Logic\Owin.Tutorials.WebApi.Controllers.csproj", "{5AE74DA8-B875-4EE7-86D2-E5E5FBBA0CA2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owin.Tutorials.WebApi.Tests", "Owin.Tutorials.WebApi.Tests\Owin.Tutorials.WebApi.Tests.csproj", "{DCBC3D7D-1715-4B86-ABCC-08EEF3C11612}"
 EndProject

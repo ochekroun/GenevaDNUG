@@ -7,8 +7,8 @@
     <ProjectGuid>{5AE74DA8-B875-4EE7-86D2-E5E5FBBA0CA2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Owin.Tutorials.WebApi.Logic</RootNamespace>
-    <AssemblyName>Owin.Tutorials.WebApi.Logic</AssemblyName>
+    <RootNamespace>Owin.Tutorials.WebApi.Controllers</RootNamespace>
+    <AssemblyName>Owin.Tutorials.WebApi.Controllers</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
