@@ -1,4 +1,4 @@
-﻿//#load @"C:\Work\HtmlDsl\packages\FsLab.1.0.2\FsLab.fsx"
+//#load @"C:\Work\HtmlDsl\packages\FsLab.1.0.2\FsLab.fsx"
 #load @"..\packages\FsLab.1.0.2\FsLab.fsx"
 
 open FSharp.Data
@@ -52,11 +52,15 @@ let value = elem "value"
 let date value = Attr("Date", value)
 let high value = Attr("High", value)
 
-let ShowXml xml =
+let ShowXmlInNotepad (html:string) =
     let name = System.Guid.NewGuid().ToString()
     let path = System.IO.Path.GetTempPath() + name + ".xml"
-    File.WriteAllText(path, xml)
-    Process.Start(path)
+    use writer = File.CreateText(path)
+    writer.Write(html)
+    writer.Close()
+    let startInfo = ProcessStartInfo("Notepad.exe", path)
+    Process.Start(startInfo)
+
 
 
 //type Stocks = CsvProvider<"http://ichart.finance.yahoo.com/table.csv?s=MSFT">
@@ -78,4 +82,4 @@ xml []
         ]
         %(string(row.Close.ToString("N2")))
   ]
-|> XmlToString |> ShowXml
+|> XmlToString |> ShowXmlInNotepad
