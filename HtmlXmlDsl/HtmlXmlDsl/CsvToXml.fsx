@@ -1,6 +1,5 @@
 ﻿//#load @"C:\Work\HtmlDsl\packages\FsLab.1.0.2\FsLab.fsx"
 #load @"..\packages\FsLab.1.0.2\FsLab.fsx"
-fsi.ShowDeclarationValues <- false
 
 open FSharp.Data
 open System.IO
@@ -52,7 +51,6 @@ let xml = elem "xml"
 let value = elem "value"
 let date value = Attr("Date", value)
 let high value = Attr("High", value)
-//let volume = elem "volume"
 
 let ShowXml xml =
     let name = System.Guid.NewGuid().ToString()
