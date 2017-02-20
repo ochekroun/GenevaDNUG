@@ -1,5 +1,6 @@
-﻿open System.Text
+open System.Text
 open System.IO
+open System.Diagnostics
 
 type Html =
     | Text of string
@@ -15,8 +16,11 @@ let HtmlToString (html:Html) : string =
         match html with
             | Text(txt) -> stringBuilder.Append(txt) |> ignore
             | Attr(name, value) -> stringBuilder.Append(sprintf " %s=\"%s\"" name value) |> ignore
-            | Tag(tag, [], [Text s]) ->
-                stringBuilder.Append(sprintf "%s<%s>%s</%s>%s" spaces tag s tag newLine) |> ignore
+            | Tag(tag, attrs, [Text s]) ->
+                stringBuilder.Append(sprintf "%s<%s" spaces tag) |> ignore
+                for attr in attrs do
+                    toString attr indent
+                stringBuilder.Append(sprintf ">%s</%s>%s" s tag newLine) |> ignore
             | Tag(tag, attrs, []) ->
                 stringBuilder.Append(sprintf "%s<%s" spaces tag) |> ignore
                 for attr in attrs do
@@ -133,13 +137,15 @@ html
 |> HtmlToString  |> printfn "%A"
 
 
-let ShowHtmlInBrowser (html:string) =
+let ShowHtmlInNotepad (html:string) =
     let name = System.Guid.NewGuid().ToString()
     let path = System.IO.Path.GetTempPath() + name + ".html"
     use writer = File.CreateText(path)
     writer.Write(html)
     writer.Close()
-    System.Diagnostics.Process.Start(path) |> ignore
+    let startInfo = ProcessStartInfo("Notepad.exe", path)
+    Process.Start(startInfo)
+
 
 let ul attrs elems = tag "ul" attrs elems
 let li attrs elems = tag "li" attrs elems
@@ -158,7 +164,7 @@ let timesTable n =
                   %(sprintf "%d x %d = %d" n i (n*i))]
         ]
     ]
-timesTable 17 |> HtmlToString |> ShowHtmlInBrowser
+timesTable 17 |> HtmlToString |> ShowHtmlInNotepad
 
 let table attrs elems = tag "table" attrs elems 
 let thead attrs elems = tag "thead" attrs elems 
@@ -204,5 +210,5 @@ html
                     ]
                 ]
     ]
-|> HtmlToString |> ShowHtmlInBrowser
+|> HtmlToString |> ShowHtmlInNotepad
 
