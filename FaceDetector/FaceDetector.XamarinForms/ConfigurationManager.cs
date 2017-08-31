@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace FaceDetector.XamarinForms
+﻿namespace FaceDetector.XamarinForms
 {
     public static class AppSettings
     {

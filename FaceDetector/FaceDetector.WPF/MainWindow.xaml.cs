@@ -1,18 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Configuration;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using FaceDetector.Library;
 using SkiaSharp.Views.Desktop;
 using SkiaSharp.Views.WPF;
@@ -22,7 +9,7 @@ namespace FaceDetector.WPF
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow
     {
         private FaceDetectorLibrary _faceDetectionLibrary;
 
@@ -47,12 +34,12 @@ namespace FaceDetector.WPF
             }
 
             _faceDetectionLibrary.LoadPicture(openDlg.FileName);
-            canvas.InvalidateVisual();
+            Canvas.InvalidateVisual();
 
             Title = "Detecting...";
             var facesCount = await _faceDetectionLibrary.DetectFaces();
             Title = $"Detection Finished. {facesCount} face(s) detected";
-            canvas.InvalidateVisual();
+            Canvas.InvalidateVisual();
         }
 
 

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.ProjectOxford.Face;
 using Microsoft.ProjectOxford.Face.Contract;
@@ -17,7 +16,7 @@ namespace FaceDetector.Library
         public FaceDetectorLibrary(string id, string url)
         {
             _faceServiceClient = new FaceServiceClient(id, url);
-            _faces = new Face[0]; ;
+            _faces = new Face[0];
         }
 
         public void LoadPicture(string filePath)
@@ -77,7 +76,7 @@ namespace FaceDetector.Library
                     _faces = await _faceServiceClient.DetectAsync(imageFileStream,
                         true,
                         true,
-                        new FaceAttributeType[] {
+                        new[] {
                             FaceAttributeType.Gender,
                             FaceAttributeType.Age,
                             FaceAttributeType.Emotion
