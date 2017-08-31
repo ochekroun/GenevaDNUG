@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,11 +24,15 @@ namespace FaceDetector.WPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        private FaceDetectoryLibrary _faceDetectionLibrary;
+        private FaceDetectorLibrary _faceDetectionLibrary;
 
         public MainWindow()
         {
             InitializeComponent();
+
+            var id = ConfigurationManager.AppSettings["PrivateKeyId"];
+            var url = ConfigurationManager.AppSettings["PrivateKeyUrl"];
+            _faceDetectionLibrary = new FaceDetectorLibrary(id, url);
         }
 
         private async void BrowseButton_Click(object sender, RoutedEventArgs e)
@@ -41,7 +46,7 @@ namespace FaceDetector.WPF
                 return;
             }
 
-            _faceDetectionLibrary = new FaceDetectoryLibrary(openDlg.FileName);
+            _faceDetectionLibrary.LoadPicture(openDlg.FileName);
             canvas.InvalidateVisual();
 
             Title = "Detecting...";

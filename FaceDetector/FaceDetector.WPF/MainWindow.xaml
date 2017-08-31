@@ -13,7 +13,7 @@
             <RowDefinition Height="35"></RowDefinition>
         </Grid.RowDefinitions>
         <wpf:SKElement Grid.Row="0" x:Name="canvas" PaintSurface="OnPaintCanvas"   />
-        <Button Grid.Row="1" x:Name="BrowseButton" Margin="20,5" Height="20"         
+        <Button Grid.Row="1" x:Name="BrowseButton" Margin="20,5" Height="25" MaxWidth="100"          
                 VerticalAlignment="Bottom" Content="Browse..."                
                 Click="BrowseButton_Click"/>
     </Grid>

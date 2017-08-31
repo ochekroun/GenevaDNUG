@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.ProjectOxford.Face.DotNetStandard" Version="1.0.0" />
-    <PackageReference Include="SkiaSharp" Version="1.59.0" />
+    <PackageReference Include="SkiaSharp" Version="1.59.1" />
   </ItemGroup>
 
 </Project>
