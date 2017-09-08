@@ -152,9 +152,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FaceDetector.XamarinForms\FaceDetector.XamarinForms.csproj">
-      <Project>{89d8b8e8-3f7b-476f-99a8-1720e328b353}</Project>
-      <Name>FaceDetector.XamarinForms</Name>
+    <ProjectReference Include="..\FaceDetector.Forms\FaceDetector.Forms.csproj">
+      <Project>{2f3bd4fa-9dab-43d9-af85-69b12b84195e}</Project>
+      <Name>FaceDetector.Forms</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

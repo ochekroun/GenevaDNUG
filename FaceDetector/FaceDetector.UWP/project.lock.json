@@ -2605,7 +2605,7 @@
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       },
-      "FaceDetector.XamarinForms/1.0.0": {
+      "FaceDetector.Forms/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
@@ -5206,7 +5206,7 @@
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       },
-      "FaceDetector.XamarinForms/1.0.0": {
+      "FaceDetector.Forms/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
@@ -7843,7 +7843,7 @@
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       },
-      "FaceDetector.XamarinForms/1.0.0": {
+      "FaceDetector.Forms/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
@@ -10453,7 +10453,7 @@
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       },
-      "FaceDetector.XamarinForms/1.0.0": {
+      "FaceDetector.Forms/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
@@ -13099,7 +13099,7 @@
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       },
-      "FaceDetector.XamarinForms/1.0.0": {
+      "FaceDetector.Forms/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
@@ -15709,7 +15709,7 @@
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       },
-      "FaceDetector.XamarinForms/1.0.0": {
+      "FaceDetector.Forms/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
@@ -18355,7 +18355,7 @@
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       },
-      "FaceDetector.XamarinForms/1.0.0": {
+      "FaceDetector.Forms/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
@@ -27379,10 +27379,10 @@
         "xamarin.forms.nuspec"
       ]
     },
-    "FaceDetector.XamarinForms/1.0.0": {
+    "FaceDetector.Forms/1.0.0": {
       "type": "project",
-      "path": "../FaceDetector.XamarinForms/FaceDetector.XamarinForms.csproj",
-      "msbuildProject": "../FaceDetector.XamarinForms/FaceDetector.XamarinForms.csproj"
+      "path": "../FaceDetector.Forms/FaceDetector.Forms.csproj",
+      "msbuildProject": "../FaceDetector.Forms/FaceDetector.Forms.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -27410,14 +27410,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Work\\git\\GenevaDNUG\\NugetLocal": {},
+        "C:\\Work\\git\\GenevaDNUG\\_Nupkg": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "uap10.0.10586": {
           "projectReferences": {
-            "C:\\Work\\git\\GenevaDNUG\\FaceDetector\\FaceDetector.XamarinForms\\FaceDetector.XamarinForms.csproj": {
-              "projectPath": "C:\\Work\\git\\GenevaDNUG\\FaceDetector\\FaceDetector.XamarinForms\\FaceDetector.XamarinForms.csproj"
+            "C:\\Work\\git\\GenevaDNUG\\FaceDetector\\FaceDetector.Forms\\FaceDetector.Forms.csproj": {
+              "projectPath": "C:\\Work\\git\\GenevaDNUG\\FaceDetector\\FaceDetector.Forms\\FaceDetector.Forms.csproj"
             }
           }
         }
