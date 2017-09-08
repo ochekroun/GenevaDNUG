@@ -6,7 +6,7 @@
 *.user
 *.sln.docstates
 
-.vs/
+
 
 # Build results
 
@@ -159,3 +159,4 @@ $RECYCLE.BIN/
 *.sqlite
 *.sqlite-journal
 *.json
+*.ide
