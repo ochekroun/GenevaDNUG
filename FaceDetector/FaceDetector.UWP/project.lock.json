@@ -2,6 +2,20 @@
   "version": 3,
   "targets": {
     "UAP,Version=v10.0.10586": {
+      "FaceDetector.Library/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ProjectOxford.Face.DotNetStandard": "1.0.0",
+          "NETStandard.Library": "1.6.1",
+          "SkiaSharp": "1.59.1"
+        },
+        "compile": {
+          "lib/netstandard1.4/FaceDetector.Library.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/FaceDetector.Library.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2591,20 +2605,11 @@
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       },
-      "FaceDetector.Library/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v1.4",
-        "dependencies": {
-          "Microsoft.ProjectOxford.Face.DotNetStandard": "1.0.0",
-          "NETStandard.Library": "1.6.1",
-          "SkiaSharp": "1.59.1"
-        }
-      },
       "FaceDetector.XamarinForms/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
-          "FaceDetector.Library": "1.0.0",
+          "FaceDetector.Library": "1.0.1",
           "NETStandard.Library": "1.6.1",
           "SkiaSharp.Views.Forms": "1.59.1",
           "Xam.Plugin.Media": "3.0.1",
@@ -2613,6 +2618,20 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-arm": {
+      "FaceDetector.Library/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ProjectOxford.Face.DotNetStandard": "1.0.0",
+          "NETStandard.Library": "1.6.1",
+          "SkiaSharp": "1.59.1"
+        },
+        "compile": {
+          "lib/netstandard1.4/FaceDetector.Library.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/FaceDetector.Library.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -5187,20 +5206,11 @@
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       },
-      "FaceDetector.Library/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v1.4",
-        "dependencies": {
-          "Microsoft.ProjectOxford.Face.DotNetStandard": "1.0.0",
-          "NETStandard.Library": "1.6.1",
-          "SkiaSharp": "1.59.1"
-        }
-      },
       "FaceDetector.XamarinForms/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
-          "FaceDetector.Library": "1.0.0",
+          "FaceDetector.Library": "1.0.1",
           "NETStandard.Library": "1.6.1",
           "SkiaSharp.Views.Forms": "1.59.1",
           "Xam.Plugin.Media": "3.0.1",
@@ -5209,6 +5219,20 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-arm-aot": {
+      "FaceDetector.Library/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ProjectOxford.Face.DotNetStandard": "1.0.0",
+          "NETStandard.Library": "1.6.1",
+          "SkiaSharp": "1.59.1"
+        },
+        "compile": {
+          "lib/netstandard1.4/FaceDetector.Library.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/FaceDetector.Library.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -7819,20 +7843,11 @@
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       },
-      "FaceDetector.Library/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v1.4",
-        "dependencies": {
-          "Microsoft.ProjectOxford.Face.DotNetStandard": "1.0.0",
-          "NETStandard.Library": "1.6.1",
-          "SkiaSharp": "1.59.1"
-        }
-      },
       "FaceDetector.XamarinForms/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
-          "FaceDetector.Library": "1.0.0",
+          "FaceDetector.Library": "1.0.1",
           "NETStandard.Library": "1.6.1",
           "SkiaSharp.Views.Forms": "1.59.1",
           "Xam.Plugin.Media": "3.0.1",
@@ -7841,6 +7856,20 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-x64": {
+      "FaceDetector.Library/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ProjectOxford.Face.DotNetStandard": "1.0.0",
+          "NETStandard.Library": "1.6.1",
+          "SkiaSharp": "1.59.1"
+        },
+        "compile": {
+          "lib/netstandard1.4/FaceDetector.Library.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/FaceDetector.Library.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -10424,20 +10453,11 @@
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       },
-      "FaceDetector.Library/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v1.4",
-        "dependencies": {
-          "Microsoft.ProjectOxford.Face.DotNetStandard": "1.0.0",
-          "NETStandard.Library": "1.6.1",
-          "SkiaSharp": "1.59.1"
-        }
-      },
       "FaceDetector.XamarinForms/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
-          "FaceDetector.Library": "1.0.0",
+          "FaceDetector.Library": "1.0.1",
           "NETStandard.Library": "1.6.1",
           "SkiaSharp.Views.Forms": "1.59.1",
           "Xam.Plugin.Media": "3.0.1",
@@ -10446,6 +10466,20 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-x64-aot": {
+      "FaceDetector.Library/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ProjectOxford.Face.DotNetStandard": "1.0.0",
+          "NETStandard.Library": "1.6.1",
+          "SkiaSharp": "1.59.1"
+        },
+        "compile": {
+          "lib/netstandard1.4/FaceDetector.Library.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/FaceDetector.Library.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -13065,20 +13099,11 @@
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       },
-      "FaceDetector.Library/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v1.4",
-        "dependencies": {
-          "Microsoft.ProjectOxford.Face.DotNetStandard": "1.0.0",
-          "NETStandard.Library": "1.6.1",
-          "SkiaSharp": "1.59.1"
-        }
-      },
       "FaceDetector.XamarinForms/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
-          "FaceDetector.Library": "1.0.0",
+          "FaceDetector.Library": "1.0.1",
           "NETStandard.Library": "1.6.1",
           "SkiaSharp.Views.Forms": "1.59.1",
           "Xam.Plugin.Media": "3.0.1",
@@ -13087,6 +13112,20 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-x86": {
+      "FaceDetector.Library/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ProjectOxford.Face.DotNetStandard": "1.0.0",
+          "NETStandard.Library": "1.6.1",
+          "SkiaSharp": "1.59.1"
+        },
+        "compile": {
+          "lib/netstandard1.4/FaceDetector.Library.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/FaceDetector.Library.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -15670,20 +15709,11 @@
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       },
-      "FaceDetector.Library/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v1.4",
-        "dependencies": {
-          "Microsoft.ProjectOxford.Face.DotNetStandard": "1.0.0",
-          "NETStandard.Library": "1.6.1",
-          "SkiaSharp": "1.59.1"
-        }
-      },
       "FaceDetector.XamarinForms/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
-          "FaceDetector.Library": "1.0.0",
+          "FaceDetector.Library": "1.0.1",
           "NETStandard.Library": "1.6.1",
           "SkiaSharp.Views.Forms": "1.59.1",
           "Xam.Plugin.Media": "3.0.1",
@@ -15692,6 +15722,20 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-x86-aot": {
+      "FaceDetector.Library/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ProjectOxford.Face.DotNetStandard": "1.0.0",
+          "NETStandard.Library": "1.6.1",
+          "SkiaSharp": "1.59.1"
+        },
+        "compile": {
+          "lib/netstandard1.4/FaceDetector.Library.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/FaceDetector.Library.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -18311,20 +18355,11 @@
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
       },
-      "FaceDetector.Library/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v1.4",
-        "dependencies": {
-          "Microsoft.ProjectOxford.Face.DotNetStandard": "1.0.0",
-          "NETStandard.Library": "1.6.1",
-          "SkiaSharp": "1.59.1"
-        }
-      },
       "FaceDetector.XamarinForms/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
-          "FaceDetector.Library": "1.0.0",
+          "FaceDetector.Library": "1.0.1",
           "NETStandard.Library": "1.6.1",
           "SkiaSharp.Views.Forms": "1.59.1",
           "Xam.Plugin.Media": "3.0.1",
@@ -18334,6 +18369,16 @@
     }
   },
   "libraries": {
+    "FaceDetector.Library/1.0.1": {
+      "sha512": "txzrtt6OIlTLCGmg648QifJHs8w95aca+yJ8rqODtGrXCKB3wapWTlpEwMHMYPHlevWghG49mKs+GYxRZ7z3WA==",
+      "type": "package",
+      "path": "facedetector.library/1.0.1",
+      "files": [
+        "facedetector.library.1.0.1.nupkg.sha512",
+        "facedetector.library.nuspec",
+        "lib/netstandard1.4/FaceDetector.Library.dll"
+      ]
+    },
     "Microsoft.CSharp/4.3.0": {
       "sha512": "P+MBhIM0YX+JqROuf7i306ZLJEjQYA9uUyRDE+OqwUI5sh41e2ZbPQV3LfAPh+29cmceE1pUffXsGfR4eMY3KA==",
       "type": "package",
@@ -27333,11 +27378,6 @@
         "xamarin.forms.2.3.4.267.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
-    },
-    "FaceDetector.Library/1.0.0": {
-      "type": "project",
-      "path": "../FaceDetector.Library/FaceDetector.Library.csproj",
-      "msbuildProject": "../FaceDetector.Library/FaceDetector.Library.csproj"
     },
     "FaceDetector.XamarinForms/1.0.0": {
       "type": "project",
