@@ -1,8 +1,6 @@
-﻿using Xamarin.Forms;
-
-namespace FaceDetector.XamarinForms
+﻿namespace FaceDetector.Forms
 {
-    public partial class App : Application
+    public partial class App
     {
         public App()
         {

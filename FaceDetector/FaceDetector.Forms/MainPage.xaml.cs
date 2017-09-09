@@ -1,15 +1,14 @@
 ﻿using System;
-using Plugin.Media;
-using SkiaSharp.Views.Forms;
-using Xamarin.Forms;
 using FaceDetector.Library;
+using Plugin.Media;
 using Plugin.Media.Abstractions;
+using SkiaSharp.Views.Forms;
 
-namespace FaceDetector.XamarinForms
+namespace FaceDetector.Forms
 {
-    public partial class MainPage : ContentPage
+    public partial class MainPage
     {
-        private FaceDetectorLibrary _faceDetectoryLibrary;
+        private FaceDetectorLibrary _faceDetectorLibrary;
 
         public MainPage()
         {
@@ -20,49 +19,55 @@ namespace FaceDetector.XamarinForms
         {
             get
             {
-                if(_faceDetectoryLibrary == null)
+                if (_faceDetectorLibrary == null)
                 {
                     var id = AppSettings.PrivateKeyId;
                     var url = AppSettings.PrivateKeyUrl;
-                    _faceDetectoryLibrary = new FaceDetectorLibrary(id, url);
+                    _faceDetectorLibrary = new FaceDetectorLibrary(id, url);
                 }
-                return _faceDetectoryLibrary;
+                return _faceDetectorLibrary;
             }
         }
 
         private async void Button_OnClicked(object sender, EventArgs e)
         {
-            await CrossMedia.Current.Initialize();
-
-            MediaFile mediaFile = null;
-
-            if (sender == BtnPickPhoto)
+            try
             {
-                mediaFile = await CrossMedia.Current.PickPhotoAsync();
+                await CrossMedia.Current.Initialize();
+
+                MediaFile mediaFile = null;
+
+                if (sender == BtnPickPhoto)
+                {
+                    mediaFile = await CrossMedia.Current.PickPhotoAsync();
+                }
+                else if (sender == BtnTakePhoto)
+                {
+                    mediaFile = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions());
+                }
+
+                if (mediaFile == null)
+                {
+                    return;
+                }
+
+                FaceDetectorLibrary.LoadPicture(mediaFile.Path);
+                SkCanvas.InvalidateSurface();
+
+                LabelResult.Text = "Detecting...";
+                var facesCount = await FaceDetectorLibrary.DetectFaces();
+                LabelResult.Text = $"Detection Finished. {facesCount} face(s) detected";
+                SkCanvas.InvalidateSurface();
             }
-            else if(sender == BtnTakePhoto)
+            catch (Exception ex)
             {
-                mediaFile = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions());
+                await DisplayAlert("Error", ex.Message, "OK");
             }
-
-            if (mediaFile == null)
-            {
-                return;
-            }
-
-            FaceDetectorLibrary.LoadPicture(mediaFile.Path);
-            SKCanvas.InvalidateSurface();
-
-            LabelResult.Text = "Detecting...";
-            var facesCount = await FaceDetectorLibrary.DetectFaces();
-            LabelResult.Text = $"Detection Finished. {facesCount} face(s) detected";
-            SKCanvas.InvalidateSurface();
         }
 
         private void SKCanvasView_OnPaintSurface(object sender, SKPaintSurfaceEventArgs e)
         {
-            var skElement = sender as SKCanvasView;
-            if (skElement != null)
+            if (sender is SKCanvasView)
             {
                 FaceDetectorLibrary.DrawPicture(e.Surface.Canvas);
             }

@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:FaceDetector"
              xmlns:forms="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
-             x:Class="FaceDetector.XamarinForms.MainPage">
+             x:Class="FaceDetector.Forms.MainPage">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -12,7 +11,7 @@
             <RowDefinition Height="35"></RowDefinition>
             <RowDefinition Height="35"></RowDefinition>
         </Grid.RowDefinitions>
-        <forms:SKCanvasView Grid.Row="0"  x:Name="SKCanvas"  PaintSurface="SKCanvasView_OnPaintSurface" />
+        <forms:SKCanvasView Grid.Row="0"  x:Name="SkCanvas"  PaintSurface="SKCanvasView_OnPaintSurface" />
         <Label Grid.Row="1" x:Name="LabelResult" />
         <Button Grid.Row="2" Clicked="Button_OnClicked" x:Name="BtnPickPhoto" Text="Pick a photo..."  WidthRequest="50"/>
         <Button Grid.Row="3" Clicked="Button_OnClicked" x:Name="BtnTakePhoto" Text="Take a photo..." />

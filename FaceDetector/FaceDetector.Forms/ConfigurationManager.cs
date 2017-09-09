@@ -1,4 +1,4 @@
-﻿namespace FaceDetector.XamarinForms
+﻿namespace FaceDetector.Forms
 {
     public static class AppSettings
     {

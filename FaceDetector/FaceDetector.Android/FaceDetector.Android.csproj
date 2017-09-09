@@ -49,8 +49,8 @@
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FaceDetector.Library, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\FaceDetector.Library.1.0.1\lib\netstandard1.4\FaceDetector.Library.dll</HintPath>
+    <Reference Include="FaceDetector.Library, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FaceDetector.Library.1.0.3\lib\netstandard1.4\FaceDetector.Library.dll</HintPath>
     </Reference>
     <Reference Include="FormsViewGroup">
       <HintPath>..\packages\Xamarin.Forms.2.3.4.267\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>

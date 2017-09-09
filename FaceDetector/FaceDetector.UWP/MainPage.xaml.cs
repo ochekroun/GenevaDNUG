@@ -6,7 +6,7 @@
         {
             InitializeComponent();
 
-            LoadApplication(new XamarinForms.App());
+            LoadApplication(new Forms.App());
         }
     }
 }

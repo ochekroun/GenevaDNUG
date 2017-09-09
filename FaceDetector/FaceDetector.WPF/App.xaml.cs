@@ -1,6 +1,4 @@
-﻿using System.Windows;
-
-namespace FaceDetector.WPF
+﻿namespace FaceDetector.WPF
 {
     /// <summary>
     /// Interaction logic for App.xaml

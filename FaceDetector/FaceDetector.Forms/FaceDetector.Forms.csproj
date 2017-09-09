@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="FaceDetector.Library" Version="1.0.1" />
+    <PackageReference Include="FaceDetector.Library" Version="1.0.3" />
     <PackageReference Include="SkiaSharp.Views.Forms" Version="1.59.1" />
     <PackageReference Include="Xam.Plugin.Media" Version="3.0.1" />
     <PackageReference Include="Xamarin.Forms" Version="2.3.4.267" />

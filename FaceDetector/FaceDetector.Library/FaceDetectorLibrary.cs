@@ -1,5 +1,4 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using System.Threading.Tasks;
 using Microsoft.ProjectOxford.Face;
 using Microsoft.ProjectOxford.Face.Contract;
@@ -22,7 +21,7 @@ namespace FaceDetector.Library
         public void LoadPicture(string filePath)
         {
             _pictureFilePath = filePath;
-            _faces = new Face[0]; ;
+            _faces = new Face[0];
         }
 
         public void DrawPicture(SKCanvas canvas)
@@ -83,9 +82,10 @@ namespace FaceDetector.Library
                         });
                 }
             }
-            catch (Exception)
+            catch
             {
                 _faces = new Face[0];
+                throw;
             }
             return _faces.Length;
         }

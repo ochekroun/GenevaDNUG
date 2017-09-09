@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "UAP,Version=v10.0.10586": {
-      "FaceDetector.Library/1.0.1": {
+      "FaceDetector.Library/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.ProjectOxford.Face.DotNetStandard": "1.0.0",
@@ -2609,7 +2609,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
-          "FaceDetector.Library": "1.0.1",
+          "FaceDetector.Library": "1.0.3",
           "NETStandard.Library": "1.6.1",
           "SkiaSharp.Views.Forms": "1.59.1",
           "Xam.Plugin.Media": "3.0.1",
@@ -2618,7 +2618,7 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-arm": {
-      "FaceDetector.Library/1.0.1": {
+      "FaceDetector.Library/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.ProjectOxford.Face.DotNetStandard": "1.0.0",
@@ -5210,7 +5210,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
-          "FaceDetector.Library": "1.0.1",
+          "FaceDetector.Library": "1.0.3",
           "NETStandard.Library": "1.6.1",
           "SkiaSharp.Views.Forms": "1.59.1",
           "Xam.Plugin.Media": "3.0.1",
@@ -5219,7 +5219,7 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-arm-aot": {
-      "FaceDetector.Library/1.0.1": {
+      "FaceDetector.Library/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.ProjectOxford.Face.DotNetStandard": "1.0.0",
@@ -7847,7 +7847,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
-          "FaceDetector.Library": "1.0.1",
+          "FaceDetector.Library": "1.0.3",
           "NETStandard.Library": "1.6.1",
           "SkiaSharp.Views.Forms": "1.59.1",
           "Xam.Plugin.Media": "3.0.1",
@@ -7856,7 +7856,7 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-x64": {
-      "FaceDetector.Library/1.0.1": {
+      "FaceDetector.Library/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.ProjectOxford.Face.DotNetStandard": "1.0.0",
@@ -10457,7 +10457,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
-          "FaceDetector.Library": "1.0.1",
+          "FaceDetector.Library": "1.0.3",
           "NETStandard.Library": "1.6.1",
           "SkiaSharp.Views.Forms": "1.59.1",
           "Xam.Plugin.Media": "3.0.1",
@@ -10466,7 +10466,7 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-x64-aot": {
-      "FaceDetector.Library/1.0.1": {
+      "FaceDetector.Library/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.ProjectOxford.Face.DotNetStandard": "1.0.0",
@@ -13103,7 +13103,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
-          "FaceDetector.Library": "1.0.1",
+          "FaceDetector.Library": "1.0.3",
           "NETStandard.Library": "1.6.1",
           "SkiaSharp.Views.Forms": "1.59.1",
           "Xam.Plugin.Media": "3.0.1",
@@ -13112,7 +13112,7 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-x86": {
-      "FaceDetector.Library/1.0.1": {
+      "FaceDetector.Library/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.ProjectOxford.Face.DotNetStandard": "1.0.0",
@@ -15713,7 +15713,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
-          "FaceDetector.Library": "1.0.1",
+          "FaceDetector.Library": "1.0.3",
           "NETStandard.Library": "1.6.1",
           "SkiaSharp.Views.Forms": "1.59.1",
           "Xam.Plugin.Media": "3.0.1",
@@ -15722,7 +15722,7 @@
       }
     },
     "UAP,Version=v10.0.10586/win10-x86-aot": {
-      "FaceDetector.Library/1.0.1": {
+      "FaceDetector.Library/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.ProjectOxford.Face.DotNetStandard": "1.0.0",
@@ -18359,7 +18359,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
-          "FaceDetector.Library": "1.0.1",
+          "FaceDetector.Library": "1.0.3",
           "NETStandard.Library": "1.6.1",
           "SkiaSharp.Views.Forms": "1.59.1",
           "Xam.Plugin.Media": "3.0.1",
@@ -18369,12 +18369,12 @@
     }
   },
   "libraries": {
-    "FaceDetector.Library/1.0.1": {
-      "sha512": "txzrtt6OIlTLCGmg648QifJHs8w95aca+yJ8rqODtGrXCKB3wapWTlpEwMHMYPHlevWghG49mKs+GYxRZ7z3WA==",
+    "FaceDetector.Library/1.0.3": {
+      "sha512": "gkSancRlfqKH3lgZnaPquxiAvgwOyaT+72izxfO0oe1t1X2Rmm5ahHrK6YySXT7ls6yTIQlAYfX5d7mx5xUiSw==",
       "type": "package",
-      "path": "facedetector.library/1.0.1",
+      "path": "facedetector.library/1.0.3",
       "files": [
-        "facedetector.library.1.0.1.nupkg.sha512",
+        "facedetector.library.1.0.3.nupkg.sha512",
         "facedetector.library.nuspec",
         "lib/netstandard1.4/FaceDetector.Library.dll"
       ]
@@ -27393,7 +27393,7 @@
     "UAP,Version=v10.0.10586": []
   },
   "packageFolders": {
-    "C:\\Users\\chekr\\.nuget\\packages\\": {}
+    "C:\\Users\\GDNUG\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
@@ -27401,11 +27401,11 @@
       "projectName": "FaceDetector.UWP",
       "projectPath": "C:\\Work\\git\\GenevaDNUG\\FaceDetector\\FaceDetector.UWP\\FaceDetector.UWP.csproj",
       "projectJsonPath": "C:\\Work\\git\\GenevaDNUG\\FaceDetector\\FaceDetector.UWP\\project.json",
-      "packagesPath": "C:\\Users\\chekr\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\GDNUG\\.nuget\\packages\\",
       "outputPath": "C:\\Work\\git\\GenevaDNUG\\FaceDetector\\FaceDetector.UWP\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
-        "C:\\Users\\chekr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\GDNUG\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "sources": {
