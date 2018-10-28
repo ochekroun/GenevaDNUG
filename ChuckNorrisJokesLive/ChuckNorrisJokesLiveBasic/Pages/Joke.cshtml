@@ -5,12 +5,12 @@
     ViewData["Title"] = "Joke";
 }
 
-<h2>Joke</h2>
+<h2>Chuck Norris joke</h2>
 
-<p>Chuck Norris joke sent by Azure: <strong><span id="joke">Waiting to start...</span></strong></p>
+<p><strong><span id="joke">Waiting to start...</span></strong></p>
 
 @section Scripts
-{
+    {
     <script src="~/lib/signalr/dist/browser/signalr.js"></script>
     <script>
         var connection = new signalR.HubConnectionBuilder().withUrl("/chucknorrisjokeshub").build();

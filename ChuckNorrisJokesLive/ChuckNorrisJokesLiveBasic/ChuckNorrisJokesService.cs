@@ -26,7 +26,7 @@ namespace ChuckNorrisJokesLiveBasic
             }
         }
 
-        private async Task<string> GetJoke()
+        private static async Task<string> GetJoke()
         {
             using (var httpClient = new HttpClient())
             {
