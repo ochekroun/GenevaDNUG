@@ -3,12 +3,13 @@ using Microsoft.AspNetCore.SignalR;
 
 namespace ChuckNorrisJokesLive
 {
-    public interface IChuckNorrisJokeHub
+    public interface IChuckNorrisJokesHub
     {
         Task ReceiveJoke(string joke);
     }
 
-    public class ChuckNorrisJokeHub : Hub<IChuckNorrisJokeHub>
+
+    public class ChuckNorrisJokesHub : Hub<IChuckNorrisJokesHub>
     {
         public async Task SendJoke(string joke)
         {

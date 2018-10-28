@@ -8,12 +8,12 @@ using Microsoft.Extensions.Hosting;
 
 namespace ChuckNorrisJokesLive
 {
-    public class ChuckNorrisJokeService : BackgroundService
+    public class ChuckNorrisJokesService : BackgroundService
     {
         private readonly IHttpClientFactory _httpClientFactory;
         private readonly IServiceScopeFactory _scopeFactory;
 
-        public ChuckNorrisJokeService(IHttpClientFactory httpClientFactory, IServiceScopeFactory scopeFactory)
+        public ChuckNorrisJokesService(IHttpClientFactory httpClientFactory, IServiceScopeFactory scopeFactory)
         {
             _httpClientFactory = httpClientFactory;
             _scopeFactory = scopeFactory;

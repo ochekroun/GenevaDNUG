@@ -1,5 +1,6 @@
 ﻿@page
-@model ChuckNorrisJokesLive.Pages.JokeModel
+@model ChuckNorrisJokesLiveBasic.Pages.JokeModel
+
 @{
     ViewData["Title"] = "Joke";
 }
@@ -9,7 +10,7 @@
 <p>Chuck Norris joke sent by Azure: <strong><span id="joke">Waiting to start...</span></strong></p>
 
 @section Scripts
-    {
+{
     <script src="~/lib/signalr/dist/browser/signalr.js"></script>
     <script>
         var connection = new signalR.HubConnectionBuilder().withUrl("/chucknorrisjokeshub").build();

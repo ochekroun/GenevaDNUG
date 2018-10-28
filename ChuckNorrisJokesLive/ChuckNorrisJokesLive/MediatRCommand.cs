@@ -12,9 +12,9 @@ namespace ChuckNorrisJokesLive
 
     public class MediatRCommand : IRequestHandler<SendJokeCommand, Unit>
     {
-        private readonly IHubContext<ChuckNorrisJokeHub, IChuckNorrisJokeHub> _hubContext;
+        private readonly IHubContext<ChuckNorrisJokesHub, IChuckNorrisJokesHub> _hubContext;
 
-        public MediatRCommand(IHubContext<ChuckNorrisJokeHub, IChuckNorrisJokeHub> hubContext)
+        public MediatRCommand(IHubContext<ChuckNorrisJokesHub, IChuckNorrisJokesHub> hubContext)
         {
             _hubContext = hubContext;
         }
