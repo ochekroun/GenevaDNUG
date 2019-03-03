@@ -1,0 +1,30 @@
+﻿@page
+@model ChuckNorrisJokesLiveBasic.Pages.JokeModel
+
+@{
+    ViewData["Title"] = "Joke";
+}
+
+<h2>Chuck Norris joke</h2>
+
+<p><strong><span id="joke">Waiting to start...</span></strong></p>
+
+@section Scripts
+    {
+    <script src="~/lib/signalr/dist/browser/signalr.js"></script>
+    <script>
+        var connection = new signalR.HubConnectionBuilder().withUrl("/chucknorrisjokeshub").build();
+
+        connection.on("ReceiveJoke",
+            function (joke) {
+                var json = JSON.parse(joke);
+                document.getElementById("joke").innerHTML = json.value;
+            });
+
+        connection.start().catch(function (err) {
+            return console.error(err.toString());
+        });
+
+
+    </script>
+}
