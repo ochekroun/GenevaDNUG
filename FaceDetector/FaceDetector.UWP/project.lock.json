@@ -27393,7 +27393,7 @@
     "UAP,Version=v10.0.10586": []
   },
   "packageFolders": {
-    "C:\\Users\\GDNUG\\.nuget\\packages\\": {}
+    "C:\\Users\\chekr\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
@@ -27401,11 +27401,11 @@
       "projectName": "FaceDetector.UWP",
       "projectPath": "C:\\Work\\git\\GenevaDNUG\\FaceDetector\\FaceDetector.UWP\\FaceDetector.UWP.csproj",
       "projectJsonPath": "C:\\Work\\git\\GenevaDNUG\\FaceDetector\\FaceDetector.UWP\\project.json",
-      "packagesPath": "C:\\Users\\GDNUG\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\chekr\\.nuget\\packages\\",
       "outputPath": "C:\\Work\\git\\GenevaDNUG\\FaceDetector\\FaceDetector.UWP\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
-        "C:\\Users\\GDNUG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\chekr\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "sources": {
